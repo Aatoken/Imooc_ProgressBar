@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atoken.cn.android_progressbar.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.atoken.cn.android_progressbar.HorizontalProgressbar
+            android:id="@+id/hor_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="0"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#6495ED"
+            />
+
+        <com.atoken.cn.android_progressbar.HorizontalProgressbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:progress="100"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#6495ED"
+            />
+
+        <com.atoken.cn.android_progressbar.RoundProgressBar
+            android:layout_marginTop="30dp"
+            android:id="@+id/round_pro_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            app:progress_reach_color="#FFA500"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#6495ED"/>
+
+    </LinearLayout>
+
+</ScrollView>
